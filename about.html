@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SS Tours Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style copy.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="" class="navbar-brand p-0">
+            <h1 class="display-6 text-primary">
+              <img
+                src="img/S S Tours1.png"
+                alt="SS Tours Logo"
+                class="me-3"
+                style="height: 40px"
+              />SS Tours
+            </h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav mx-auto py-0 d-none d-sm-flex"> 
+                  <!-- Desktop View -->
+                   <a href="index.html" class="nav-item nav-link ">Home</a>
+                  <a href="about.html" class="nav-item nav-link active ">About</a>
+                  <a href="conatactus.html" class="nav-item nav-link">Contact</a>
+                  <a href="services.html" class="nav-item nav-link">Services</a>
+                  <a href="driver.html" class="nav-item nav-link">Driver</a>
+                  <a href="Testimonials.html" class="nav-item nav-link">Testimonials</a>
+              </div>
+
+              <!-- Mobile View -->
+                <div class="navbar-nav mx-auto py-0 d-sm-none">
+                  <a href="index.html" class="nav-item nav-link ">Home</a>
+                  <a href="about.html" class="nav-item nav-link active">About</a>
+                  <a href="conatactus.html" class="nav-item nav-link">Contact</a>
+                  <a href="services.html" class="nav-item nav-link">Services</a>
+                  <a href="driver.html" class="nav-item nav-link">Driver</a>
+                  <a href="Testimonials.html" class="nav-item nav-link">Testimonials</a>
+                </div>
+
+              <!-- Book Ride Button (Same for All Screens) -->
+              <a href="tel:+918432929252" class="btn btn-primary rounded-pill py-2 px-4" >
+                 +91 84329 29252
+              </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    
+
+    <section id="about">
+      <div class="container-fluid overflow-hidden about py-5 bg-light">
+        <div class="container py-5">
+          <div class="row g-5 align-items-center">
+              <div class="about-item">
+                <div class="pb-5">
+                  <h1 class="display-5 text-capitalize">
+                    About Us: <span class="text-primary">SS Tours and Travels</span>
+                  </h1>
+                  <p class="mb-4 text-muted"></p>
+                    At SS Tours & Travels, we are committed to providing a seamless and comfortable car 
+                    rental experience for travelers, business professionals, and adventure seekers. With a 
+                    strong focus on reliability, affordability, and customer satisfaction, we ensure that every 
+                    journey with us is smooth and hassle-free.
+                  </p>
+                </div>
+                <h2 class="mb-3 text-primary">Who We Are</h2>
+                <p class="text-muted"></p>
+                  Founded with a passion for travel and convenience, SS Tours & Travels has grown into a 
+                  trusted name in the car rental industry. Whether you need a car for a short trip, a 
+                  business meeting, or a long vacation, we offer a fleet of well-maintained vehicles to suit 
+                  your needs.
+                </p>
+                
+                <button class="btn btn-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#whyChooseUsContent" aria-expanded="false" aria-controls="whyChooseUsContent">
+                  Know More
+                </button>
+                <div class="collapse" id="whyChooseUsContent">
+                  <h2 class="mb-3 text-primary">Why Choose Us?</h2>
+                  <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fa fa-check-circle text-primary me-2"></i>
+                    <strong>Diverse Fleet of Vehicles</strong> – From compact cars to SUVs and luxury rides, we have options for every occasion.
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa fa-check-circle text-primary me-2"></i>
+                    <strong>Affordable & Transparent Pricing</strong> – No hidden charges, just competitive rates with flexible rental plans.
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa fa-check-circle text-primary me-2"></i>
+                    <strong>Easy Booking Process</strong> – A hassle-free online and offline booking system for quick reservations.
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa fa-check-circle text-primary me-2"></i>
+                    <strong>Safety & Hygiene First</strong> – All our vehicles are regularly sanitized and maintained for a comfortable ride.
+                  </li>
+                  <li>
+                    <i class="fa fa-check-circle text-primary me-2"></i>
+                    <strong>24/7 Customer Support</strong> – Assistance whenever you need it, ensuring peace of mind on every trip.
+                  </li>
+                  </ul>
+                  <h2 class="mb-3 text-primary">Our Mission</h2>
+                  <p class="text-muted">
+                  To make car rentals easy, affordable, and accessible while delivering top-notch 
+                  customer service. We strive to offer convenience and flexibility, making every journey 
+                  memorable.
+                  </p>
+                  <h2 class="mb-3 text-primary">Our Vision</h2>
+                  <p class="text-muted">
+                  To be the preferred car rental service provider known for quality, reliability, and 
+                  exceptional customer experience.
+                  </p>
+                  <p class="text-muted my-4">
+                  At SS Tours & Travels, your journey matters. Book with us today and enjoy the road 
+                  ahead with confidence!
+                  </p>
+                </div>
+                <h5 class="mb-3 text-primary">Our Special Routes</h5>
+                <div class="d-flex flex-wrap gap-4">
+                  <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="img/mumbai.jpg" class="card-img-top rounded-top" alt="City A">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">Pune - Mumbai</h5>
+                      <p class="card-text text-muted">Distance: 150 km | ₹2,500</p>
+                    </div>
+                  </div>
+                  <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="img/goa.jpg" class="card-img-top rounded-top" alt="City B">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">Mumbai - Goa</h5>
+                      <p class="card-text text-muted">Distance: 200 km | ₹3,000</p>
+                    </div>
+                  </div>
+                  <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="img/bangluru.jpg" class="card-img-top rounded-top" alt="City A">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">Pune - Bangaluru</h5>
+                      <p class="card-text text-muted">Distance: 400 km | ₹5,500</p>
+                    </div>
+                  </div>
+                  <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="img/hydrabar.jpg" class="card-img-top rounded-top" alt="City A">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">hydrabad - Mumbai</h5>
+                      <p class="card-text text-muted">Distance: 550 km | ₹6,500</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Hide the spinner after the page is fully loaded
+      window.addEventListener('load', function () {
+        const spinner = document.getElementById('spinner');
+        if (spinner) {
+          spinner.classList.remove('show');
+        }
+      });
+    </script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

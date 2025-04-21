@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SS Tours Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style copy.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="" class="navbar-brand p-0">
+            <h1 class="display-6 text-primary">
+              <img
+                src="img/S S Tours1.png"
+                alt="SS Tours Logo"
+                class="me-3"
+                style="height: 40px"
+              />SS Tours
+            </h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto py-0 d-none d-sm-flex">
+              <!-- Desktop View -->
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <a href="conatactus.html" class="nav-item nav-link">Contact</a>
+              <a href="services.html" class="nav-item nav-link">Services</a>
+              <a href="driver.html" class="nav-item nav-link active">Driver</a>
+              <a href="Testimonials.html" class="nav-item nav-link"
+                >Testimonials</a
+              >
+            </div>
+
+            <!-- Mobile View -->
+            <div class="navbar-nav mx-auto py-0 d-sm-none">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <a href="conatactus.html" class="nav-item nav-link">Contact</a>
+              <a href="services.html" class="nav-item nav-link">Services</a>
+              <a href="driver.html" class="nav-item nav-link active">Driver</a>
+              <a href="Testimonials.html" class="nav-item nav-link"
+                >Testimonials</a
+              >
+            </div>
+
+            <!-- Book Ride Button (Same for All Screens) -->
+            <a
+              href="tel:+918432929252"
+              class="btn btn-primary rounded-pill py-2 px-4"
+            >
+              +91 84329 29252
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Apply for Driver</h2>
+        <form
+          action="submit_driver_application.php"
+          method="POST"
+          class="needs-validation"
+        >
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fullName"
+                name="fullName"
+                required
+              />
+              <div class="invalid-feedback">Please enter your full name.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="phoneNumber" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phoneNumber"
+                name="phoneNumber"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter your phone number.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="licenseNumber" class="form-label"
+                >License Number</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="licenseNumber"
+                name="licenseNumber"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter your license number.
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="experience" class="form-label"
+                >Driving Experience (in years)</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="experience"
+                name="experience"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter your driving experience.
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="address" class="form-label">Address</label>
+              <textarea
+                class="form-control"
+                id="address"
+                name="address"
+                rows="3"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Please enter your address.</div>
+            </div>
+            <div class="col-md-12">
+              <label for="resume" class="form-label">Upload Resume</label>
+              <input
+                type="file"
+                class="form-control"
+                id="resume"
+                name="resume"
+                required
+              />
+              <div class="invalid-feedback">Please upload your resume.</div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary">
+              Submit Application
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script>
+      // Hide the spinner after the page is fully loaded
+      window.addEventListener("load", function () {
+        const spinner = document.getElementById("spinner");
+        if (spinner) {
+          spinner.classList.remove("show");
+        }
+      });
+    </script>
+    <script>
+      // Hide the spinner after the page is fully loaded
+      window.addEventListener("load", function () {
+        const spinner = document.getElementById("spinner");
+        if (spinner) {
+          spinner.classList.remove("show");
+        }
+      });
+    </script>
+  </body>
+</html>
