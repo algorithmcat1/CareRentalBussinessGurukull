@@ -1220,18 +1220,19 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-      document.querySelector("form").addEventListener("submit", function(e) {
+      const form = document.querySelector("form");
+    
+      form.addEventListener("submit", (e) => {
         e.preventDefault();
     
-        const form = e.target;
         const formData = new FormData(form);
     
         fetch("https://script.google.com/macros/s/AKfycbyzLC6VLViy7O1Wqm0fyDJtEjPp4N70tsJNP_24Q8SDkCOgON91xfpMteozKwuGF4r0/exec", {
           method: "POST",
           body: formData
         })
-        .then(res => res.json())
-        .then(response => {
+        .then(res => res.text()) // important change here
+        .then(data => {
           alert("Booking submitted successfully!");
           form.reset();
         })
@@ -1240,6 +1241,7 @@
           alert("Error submitting booking.");
         });
       });
-    </script>    
+    </script>
+      
   </body>
 </html>
