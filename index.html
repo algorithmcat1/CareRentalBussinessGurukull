@@ -1220,19 +1220,18 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-      const form = document.querySelector("form");
-    
-      form.addEventListener("submit", (e) => {
+      document.querySelector("form").addEventListener("submit", function(e) {
         e.preventDefault();
-    
+  
+        const form = e.target;
         const formData = new FormData(form);
-    
-        fetch("https://script.google.com/macros/s/AKfycbyzLC6VLViy7O1Wqm0fyDJtEjPp4N70tsJNP_24Q8SDkCOgON91xfpMteozKwuGF4r0/exec", {
+  
+        fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
           method: "POST",
-          body: formData
+          body: formData,
+          mode: "no-cors" // Prevents CORS errors, but suppresses response
         })
-        .then(res => res.text()) // important change here
-        .then(data => {
+        .then(() => {
           alert("Booking submitted successfully!");
           form.reset();
         })
