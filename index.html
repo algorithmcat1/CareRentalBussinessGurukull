@@ -1130,55 +1130,53 @@
      <!-- Modal Structure -->
     <div class="modal fade" id="rentalFormModal" tabindex="-1" aria-labelledby="rentalFormLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-primary" id="rentalFormLabel">SS Tours Form</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center">
+            <div class="p-4 bg-white bg-opacity-75 rounded-4 shadow" style="width: 100%; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); max-width: 400px;">
+              <h5 class="text-primary mb-4 text-center">Book Your Ride</h5>
+              <form id="bookingForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
                 </div>
-                <div class="modal-body">
-                  <form id="bookingForm">
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="mobileNo" class="form-label">Mobile No</label>
-                      <input type="tel" class="form-control" id="mobileNo" name="mobileNo" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="pickupLocation" class="form-label">Pickup Location</label>
-                      <input type="text" class="form-control" id="pickupLocation" name="pickupLocation" placeholder="Enter pickup location" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="dropoffLocation" class="form-label">Drop-off Location</label>
-                      <input type="text" class="form-control" id="dropoffLocation" name="dropoffLocation" placeholder="Enter drop-off location" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="pickupDate" class="form-label">Pickup Date</label>
-                      <input type="date" class="form-control" id="pickupDate" name="pickupDate" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="carType" class="form-label">Car Type</label>
-                      <select class="form-select" id="carType" name="carType" required>
-                        <option value="" disabled selected>Select your car</option>
-                        <option value="Maruti Suzuki Dzire">Maruti Suzuki Dzire</option>
-                        <option value="Hyundai Aura">Hyundai Aura</option>
-                        <option value="Skoda rapid">Skoda rapid</option>
-                        <option value="Ertiga">Ertiga</option>
-                        <option value="Innova">Innova</option>
-                        <option value="Innova crysta">Innova crysta</option>
-                        <option value="Fortuner">Fortuner</option>
-                        <option value="BMW">BMW</option>
-                        <option value="Audi">Audi</option>
-                        <option value="Mercedes">Mercedes</option>
-                        <option value="Range rover">Range rover</option>
-                        <option value="7 seater helicopter">7 seater helicopter</option>
-                      </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary rounded-pill py-2 px-4 w-100">Submit</button>
-                  </form>
+                <div class="mb-3">
+                  <label for="mobileNo" class="form-label">Mobile No</label>
+                  <input type="tel" class="form-control" id="mobileNo" name="mobileNo" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
                 </div>
+                <div class="mb-3">
+                  <label for="pickupLocation" class="form-label">Pickup Location</label>
+                  <input type="text" class="form-control" id="pickupLocation" name="pickupLocation" placeholder="Enter pickup location" required>
+                </div>
+                <div class="mb-3">
+                  <label for="dropoffLocation" class="form-label">Drop-off Location</label>
+                  <input type="text" class="form-control" id="dropoffLocation" name="dropoffLocation" placeholder="Enter drop-off location" required>
+                </div>
+                <div class="mb-3">
+                  <label for="pickupDate" class="form-label">Pickup Date</label>
+                  <input type="date" class="form-control" id="pickupDate" name="pickupDate" required>
+                </div>
+                <div class="mb-3">
+                  <label for="carType" class="form-label">Car Type</label>
+                  <select class="form-select" id="carType" name="carType" required>
+                    <option value="" disabled selected>Select your car</option>
+                    <option value="Maruti Suzuki Dzire">Maruti Suzuki Dzire</option>
+                    <option value="Hyundai Aura">Hyundai Aura</option>
+                    <option value="Skoda rapid">Skoda rapid</option>
+                    <option value="Ertiga">Ertiga</option>
+                    <option value="Innova">Innova</option>
+                    <option value="Innova crysta">Innova crysta</option>
+                    <option value="Fortuner">Fortuner</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Range rover">Range rover</option>
+                    <option value="7 seater helicopter">7 seater helicopter</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary rounded-pill py-2 px-4 w-100">Submit</button>
+              </form>
+              
             </div>
+          </div>
         </div>
     </div>
     <!-- Modal Structure end-->
